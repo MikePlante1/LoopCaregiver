@@ -42,7 +42,7 @@ struct LatestGlucoseView: View {
         }
         let elapsedMinutes: Double = timelineEntryDate.timeIntervalSince(latestGlucose.date) / 60.0
         let roundedMinutes = Int(exactly: elapsedMinutes.rounded(.up)) ?? 0
-        return "\(roundedMinutes) min"
+        return "\(roundedMinutes)m"
 //        return timeFormat.string(from: latestGlucose.date) + " (\(elapsedMinutes)m)"
     }
     
