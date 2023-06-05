@@ -56,7 +56,7 @@ struct LatestGlucoseView: View {
         toRet += "\(latestGlucoseValue)"
         
         if let lastGlucoseChangeFormatted = lastGlucoseChangeFormatted  {
-            toRet += "\(lastGlucoseChangeFormatted)"
+            toRet += " \(lastGlucoseChangeFormatted)"
         }
         
         return toRet
