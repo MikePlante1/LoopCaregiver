@@ -110,6 +110,7 @@ platform :ios do
       skip_submission: false,
       ipa: "LoopCaregiver.ipa",
       skip_waiting_for_build_processing: true,
+      changelog: git_branch+" "+last_git_commit[:abbreviated_commit_hash],
     )
   end
 
